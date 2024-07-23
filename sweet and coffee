@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SWEET AND COFFEE</title> 
+    <style>
+      body {
+        background-color: rgb(250, 200, 208);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-align: center;
+      }
+
+      header {
+        background-color: rgba(255, 255, 255, 0.624);
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      #header-image {
+        width: 200px;
+        height: auto;
+      }
+
+      nav ul li {
+        list-style-type: none;
+        display: inline;
+        margin: 0;
+        padding: 20px;
+        font-size: small;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h2 {
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        margin: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 10px;
+      }
+
+      #menu {
+        display: contents;
+      }
+
+      .menu-box {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 20px;
+        border-radius: 5px;
+        margin-top: 0px;
+        padding: 20px;
+      }
+
+      .menu-head {
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+
+      form {
+        text-align: left;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .order-box {
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 20px;
+      }
+
+      textarea {
+        width: 350px;
+        height: 100px;
+      }
+
+      input[type="number"] {
+        width: 40px;
+      }
+
+      input[type="radio"] {
+        width: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section>
+        <img
+          src="SWEET & COFFEE.png"
+          id="header-image"
+          alt="the logo of sweet and coffee including a bear in front of a honeycomb with a bee"
+        />
+        <h1>SWEET AND COFFEE</h1>
+        <p class="est"><i>est. 2024</i></p>
+        <br />
+        <nav>
+          <ul>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#order-form">ORDER HERE</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section id="menu">
+        <div class="menu-head">
+          <br />
+          <article>
+            <h2>MENU</h2>
+          </article>
+          <div class="menu-box">
+            <article class="menu-item">
+              <h3>Raspberry Cheesecake</h3>
+              <img
+                src="https://scientificallysweet.com/wp-content/uploads/2022/06/IMG_8212-er.jpg"
+                alt="a vanilla cream cheesecake with a raspberry sauce"
+                width="150px"
+              />
+              <p>A vanilla cheesecake with a tangy raspberry sauce.</p>
+              <p>
+                <b><i>$12.50</i></b>
+              </p>
+            </article>
+            <br />
+            <article class="menu-item">
+              <h3>Berry White Choc Cookies</h3>
+              <img
+                src="https://bromabakery.com/wp-content/uploads/2023/05/White-Chocolate-Raspberry-Cookies-1067x1600.webp"
+                alt="a white chocolate cookie with berries"
+                width="150px"
+              />
+              <p>The most gooey chocolate chip cookie you will ever eat.</p>
+              <p>
+                <b><i>$15.00</i></b>
+              </p>
+            </article>
+            <br />
+            <article class="menu-item">
+              <h3>Strawberry Shortcake Rolls</h3>
+              <img
+                src="https://flouringkitchen.com/wp-content/uploads/2023/07/strawberry_cinnamon_rolls.jpg"
+                alt="strawberry rolls with pink icing and strawberries on top"
+                width="150px"
+              />
+              <p>
+                A fluffy roll spread with delicious fresh strawberry filling and
+                icing.
+              </p>
+              <p>
+                <b><i>$10.00</i></b>
+              </p>
+            </article>
+            <br />
+            <article class="menu-item">
+              <h3>Peanut Butter and Jam Donuts</h3>
+              <img
+                src="https://bakerbynature.com/wp-content/uploads/2014/11/IMG_65671-682x1024-2.jpg"
+                alt="a peanut butter and jam donut a coating of sugar"
+                width="150px"
+              />
+              <p>
+                A soft donut coated in sugar, sweet jam and crunchy peanut
+                butter.
+              </p>
+              <p>
+                <b><i>$8.75</i></b>
+              </p>
+            </article>
+            <br />
+            <article class="menu-item">
+              <h3>A Variety of Macrons</h3>
+              <img
+                src="https://www.cocinista.es/download/bancorecursos/recetas/macarrons.jpg"
+                alt="four colorful pink, green and yellow macrons"
+                width="150px"
+              />
+              <p>
+                A crispy macron in lavender, rose, strawberry and raspberry.
+              </p>
+              <p>
+                <b><i> $4.00</i></b>
+              </p>
+              <p>
+                4pk<b><i> $12.50</i></b>
+              </p>
+              <p>
+                8pk<b><i> $22.50</i></b>
+              </p>
+            </article>
+            <br />
+            <article>
+              <h3>Classic Hot Drinks</h3>
+              <p>Coffee</p>
+              <p>
+                <b><i>$5</i></b>
+              </p>
+              <p>Chai</p>
+              <p>
+                <b><i>$5</i></b>
+              </p>
+              <p>Tea</p>
+              <p>
+                <b><i>$3</i></b>
+              </p>
+              <p>Hot Chocolate</p>
+              <p>
+                <b><i>$3</i></b>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="order-form">
+        <br />
+        <div class="order-box">
+          <article>
+            <h2>ORDER HERE</h2>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" name="text" required />
+              <br />
+
+              <label for="email">Email:</label>
+              <input type="email" name="email" required />
+              <br />
+
+              <label for="phone">Phone:</label>
+              <input type="tel" name="tel" required />
+              <br />
+
+              <label for="date">Pick Up Date:</label>
+              <input type="date" name="date" id="pick-up" required />
+              <br /><br />
+
+              <label for="cheesecake">Raspberry Cheesecake</label>
+              <input
+                type="number"
+                id="cheesecake"
+                name="cheesecake"
+                min="0"
+                max="5"
+              />
+              <br />
+
+              <label for="macaroons">Macrons</label>
+              <input type="number" id="macaroons" name="macaroons" min="0" />
+              <br />
+
+              <label for="cookies">Berry White Choc Cookies</label>
+              <input
+                type="number"
+                id="cookies"
+                name="cookies"
+                min="0"
+                max="5"
+              />
+              <br />
+
+              <label for="strawberry-rolls">Strawberry Shortcake Rolls</label>
+              <input
+                type="number"
+                id="strawberry-rolls"
+                name="strawberry-rolls"
+                min="0"
+                max="5"
+              />
+              <br />
+
+              <label for="donuts">Jam Donuts</label>
+              <input type="number" id="donuts" name="donuts" min="0" max="5" />
+              <br /><br />
+
+              <label for="hot-drinks">Classic Hot Drinks</label>
+              <br />
+              <label for="coffee">Coffee</label>
+              <input type="radio" name="option" />
+              <label for="qty-coffee">/qty</label>
+              <input type="number" name="qty-coffee" min="0" max="5" />
+              <br />
+              <label for="tea">Tea</label>
+              <input type="radio" name="option" />
+              <label for="qty-tea">/qty</label>
+              <input type="number" name="qty-tee" min="0" max="5" />
+              <br />
+              <label for="chai">Chai</label>
+              <input type="radio" name="option" />
+              <label for="qty-chai">/qty</label>
+              <input type="number" name="qty-chai" min="0" max="5" />
+              <br />
+              <label for="hot-choc">Hot Choc</label>
+              <input type="radio" name="option" />
+              <label for="qty-hot-choc">/qty</label>
+              <input type="number" name="qty-hot-choc" min="0" max="5" />
+              <br /><br />
+
+              <label for="special-requests">Special Requests:</label>
+              <br />
+              <textarea
+                placeholder="write any special requests here"
+                rows="5"
+                cols="25"
+              ></textarea>
+              <br />
+
+              <input type="submit" value="Go to Checkout" />
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Made with Love by <a href="https://www.codedex.io/@shani">@shani</a>
+      </p>
+    </footer>
+  </body>
+</html>
