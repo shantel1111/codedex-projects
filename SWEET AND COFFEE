@@ -1,138 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SWEET AND COFFEE</title>
-    <style>
-      body {
-        background-color: rgb(250, 200, 208);
-        background-image: url("background.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        text-align: center;
-        max-width: 800px;
-        margin-right: auto;
-        margin-left: auto;
-      }
-
-      header {
-        background-color: rgba(255, 255, 255, 0.624);
-        background-color: rgb(255, 255, 255);
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 5px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
-
-      #header-image {
-        width: 200px;
-        height: auto;
-      }
-
-      nav ul li {
-        list-style-type: none;
-        display: inline;
-        margin: 0;
-        padding: 20px;
-        font-size: small;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      li a {
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-      }
-
-      img {
-        width: 30%;
-      }
-
-      h2 {
-        background-color: rgb(255, 255, 255);
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 5px;
-        margin: 10px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 0px;
-      }
-
-      #menu {
-        display: contents;
-      }
-
-      .menu-box {
-        background-color: rgb(255, 255, 255);
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-column-gap: 20px;
-        border-radius: 5px;
-        margin-top: 0px;
-        padding: 20px;
-      }
-
-      .menu-head {
-        background-color: rgb(255, 255, 255);
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 5px;
-        margin-top: 10px;
-      }
-
-      .drinks-box {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        border-radius: 5px;
-        margin-top: 0px;
-      }
-
-      form {
-        text-align: left;
-        padding: 10px;
-        margin: 10px;
-      }
-
-      .order-box {
-        background-color: rgb(255, 255, 255);
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 5px;
-        margin-bottom: 10px;
-        padding: 20px;
-      }
-
-      textarea {
-        width: 250px;
-        height: 100px;
-      }
-
-      input[type="number"] {
-        width: 40px;
-      }
-
-      input[type="radio"] {
-        width: 30px;
-      }
-
-      .about {
-        background-color: rgb(255, 255, 255);
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 5px;
-        margin-bottom: 10px;
-        padding: 20px;
-      }
-
-      .contact {
-        background-color: rgb(255, 255, 255);
-        border: 2px solid rgb(0, 0, 0);
-        border-radius: 5px;
-        margin-bottom: 10px;
-        padding: 20px;
-      }
-    </style>
+    <link href="sweetstyles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -269,19 +141,19 @@
             <h2>ORDER HERE</h2>
             <form>
               <label for="name">Name:</label>
-              <input type="text" name="text" required />
+              <input  id="name" type="text" name="text" required />
               <br />
 
               <label for="email">Email:</label>
-              <input type="email" name="email" required />
+              <input id="email" type="email" name="email" required />
               <br />
 
               <label for="phone">Phone:</label>
-              <input type="tel" name="tel" required />
+              <input id="phone" type="tel" name="tel" required />
               <br />
 
               <label for="date">Pick Up Date:</label>
-              <input type="date" name="date" id="pick-up" required />
+              <input id="date" type="date" name="date" id="pick-up" required />
               <br /><br />
 
               <label for="cheesecake">Raspberry Cheesecake</label>
@@ -336,27 +208,25 @@
               <input type="number" id="pies" name="pies" min="0" max="5" />
               <br /><br />
 
-              <label for="hot-drinks">Classic Hot Drinks</label>
-              <br />
               <label for="coffee">Coffee</label>
-              <input type="radio" name="option" />
+              <input id="coffee" type="radio" name="option" />
               <label for="qty-coffee">/qty</label>
-              <input type="number" name="qty-coffee" min="0" max="5" />
+              <input id="qty-coffee" type="number" name="qty-coffee" min="0" max="5" />
               <br />
               <label for="tea">Tea</label>
-              <input type="radio" name="option" />
+              <input id="tea" type="radio" name="option" />
               <label for="qty-tea">/qty</label>
-              <input type="number" name="qty-tee" min="0" max="5" />
+              <input id="qty-tea" type="number" name="qty-tea" min="0" max="5" />
               <br />
               <label for="chai">Chai</label>
-              <input type="radio" name="option" />
+              <input id="chai" type="radio" name="option" />
               <label for="qty-chai">/qty</label>
-              <input type="number" name="qty-chai" min="0" max="5" />
+              <input id="qty-chai" type="number" name="qty-chai" min="0" max="5" />
               <br />
               <label for="hot-choc">Hot Choc</label>
-              <input type="radio" name="option" />
+              <input id="hot-choc" type="radio" name="option" />
               <label for="qty-hot-choc">/qty</label>
-              <input type="number" name="qty-hot-choc" min="0" max="5" />
+              <input id="qty-hot-choc" type="number" name="qty-hot-choc" min="0" max="5" />
               <br /><br />
 
               <label for="special-requests">Special Requests:</label>
