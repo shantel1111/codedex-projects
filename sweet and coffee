@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SWEET AND COFFEE</title> 
+    <title>SWEET AND COFFEE</title>
     <style>
       body {
         background-color: rgb(250, 200, 208);
+        background-image: url("background.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
           sans-serif;
         text-align: center;
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
       }
 
       header {
@@ -36,6 +43,15 @@
         text-decoration: none;
       }
 
+      li a {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+      }
+
+      img {
+        width: 30%;
+      }
+
       h2 {
         background-color: rgb(255, 255, 255);
         border: 2px solid rgb(0, 0, 0);
@@ -43,7 +59,7 @@
         margin: 10px;
         margin-top: 0px;
         margin-bottom: 0px;
-        padding: 10px;
+        padding: 0px;
       }
 
       #menu {
@@ -51,6 +67,7 @@
       }
 
       .menu-box {
+        background-color: rgb(255, 255, 255);
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-column-gap: 20px;
@@ -60,9 +77,17 @@
       }
 
       .menu-head {
+        background-color: rgb(255, 255, 255);
         border: 2px solid rgb(0, 0, 0);
         border-radius: 5px;
         margin-top: 10px;
+      }
+
+      .drinks-box {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        border-radius: 5px;
+        margin-top: 0px;
       }
 
       form {
@@ -80,7 +105,7 @@
       }
 
       textarea {
-        width: 350px;
+        width: 250px;
         height: 100px;
       }
 
@@ -91,23 +116,41 @@
       input[type="radio"] {
         width: 30px;
       }
+
+      .about {
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 20px;
+      }
+
+      .contact {
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 20px;
+      }
     </style>
   </head>
   <body>
     <header>
+      <img
+        src="SWEET & COFFEE.png"
+        id="header-image"
+        alt="the logo of sweet and coffee including a bear in front of a honeycomb with a bee"
+      />
+      <h1>SWEET AND COFFEE</h1>
+      <p class="est"><i>est. 2024</i></p>
+      <br />
       <section>
-        <img
-          src="SWEET & COFFEE.png"
-          id="header-image"
-          alt="the logo of sweet and coffee including a bear in front of a honeycomb with a bee"
-        />
-        <h1>SWEET AND COFFEE</h1>
-        <p class="est"><i>est. 2024</i></p>
-        <br />
         <nav>
           <ul>
             <li><a href="#menu">MENU</a></li>
             <li><a href="#order-form">ORDER HERE</a></li>
+            <li><a href="#about-us">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </section>
@@ -122,25 +165,18 @@
           <div class="menu-box">
             <article class="menu-item">
               <h3>Raspberry Cheesecake</h3>
-              <img
-                src="https://scientificallysweet.com/wp-content/uploads/2022/06/IMG_8212-er.jpg"
-                alt="a vanilla cream cheesecake with a raspberry sauce"
-                width="150px"
-              />
               <p>A vanilla cheesecake with a tangy raspberry sauce.</p>
               <p>
                 <b><i>$12.50</i></b>
               </p>
             </article>
             <br />
+            <br />
             <article class="menu-item">
               <h3>Berry White Choc Cookies</h3>
-              <img
-                src="https://bromabakery.com/wp-content/uploads/2023/05/White-Chocolate-Raspberry-Cookies-1067x1600.webp"
-                alt="a white chocolate cookie with berries"
-                width="150px"
-              />
-              <p>The most gooey chocolate chip cookie you will ever eat.</p>
+              <p>
+                A gooey white chocolate chip cookie with hints of mixed berries.
+              </p>
               <p>
                 <b><i>$15.00</i></b>
               </p>
@@ -148,11 +184,6 @@
             <br />
             <article class="menu-item">
               <h3>Strawberry Shortcake Rolls</h3>
-              <img
-                src="https://flouringkitchen.com/wp-content/uploads/2023/07/strawberry_cinnamon_rolls.jpg"
-                alt="strawberry rolls with pink icing and strawberries on top"
-                width="150px"
-              />
               <p>
                 A fluffy roll spread with delicious fresh strawberry filling and
                 icing.
@@ -164,11 +195,6 @@
             <br />
             <article class="menu-item">
               <h3>Peanut Butter and Jam Donuts</h3>
-              <img
-                src="https://bakerbynature.com/wp-content/uploads/2014/11/IMG_65671-682x1024-2.jpg"
-                alt="a peanut butter and jam donut a coating of sugar"
-                width="150px"
-              />
               <p>
                 A soft donut coated in sugar, sweet jam and crunchy peanut
                 butter.
@@ -179,12 +205,25 @@
             </article>
             <br />
             <article class="menu-item">
+              <h3>Peach Honey Pies</h3>
+              <p>
+                A delicate pie filled with a sweet honey and caramelized peach.
+              </p>
+              <p>
+                <b><i>$18.50</i></b>
+              </p>
+            </article>
+            <br />
+            <article class="menu-item">
+              <h3>Red Velvet Brownies</h3>
+              <p>A ultra fudge brownie topped with chocolate chips.</p>
+              <p>
+                <b><i>$5.50</i></b>
+              </p>
+            </article>
+            <br />
+            <article class="menu-item">
               <h3>A Variety of Macrons</h3>
-              <img
-                src="https://www.cocinista.es/download/bancorecursos/recetas/macarrons.jpg"
-                alt="four colorful pink, green and yellow macrons"
-                width="150px"
-              />
               <p>
                 A crispy macron in lavender, rose, strawberry and raspberry.
               </p>
@@ -201,22 +240,24 @@
             <br />
             <article>
               <h3>Classic Hot Drinks</h3>
-              <p>Coffee</p>
-              <p>
-                <b><i>$5</i></b>
-              </p>
-              <p>Chai</p>
-              <p>
-                <b><i>$5</i></b>
-              </p>
-              <p>Tea</p>
-              <p>
-                <b><i>$3</i></b>
-              </p>
-              <p>Hot Chocolate</p>
-              <p>
-                <b><i>$3</i></b>
-              </p>
+              <div class="drinks-box">
+                <p>Coffee</p>
+                <p>
+                  <b><i>$5</i></b>
+                </p>
+                <p>Tea</p>
+                <p>
+                  <b><i>$3</i></b>
+                </p>
+                <p>Chai</p>
+                <p>
+                  <b><i>$5</i></b>
+                </p>
+                <p>Hot Choc</p>
+                <p>
+                  <b><i>$3</i></b>
+                </p>
+              </div>
             </article>
           </div>
         </div>
@@ -279,6 +320,20 @@
 
               <label for="donuts">Jam Donuts</label>
               <input type="number" id="donuts" name="donuts" min="0" max="5" />
+              <br />
+
+              <label for="brownies">Red Velvet Brownies</label>
+              <input
+                type="number"
+                id="brownies"
+                name="brownies"
+                min="0"
+                max="5"
+              />
+              <br />
+
+              <label for="pies">Peach Honey Pies</label>
+              <input type="number" id="pies" name="pies" min="0" max="5" />
               <br /><br />
 
               <label for="hot-drinks">Classic Hot Drinks</label>
@@ -318,11 +373,35 @@
           </article>
         </div>
       </section>
+      <section id="about-us">
+        <article>
+          <div class="about">
+            <h2>ABOUT US</h2>
+            <p>
+              We are a small family owned bakery that has a great love of
+              baking. All these baked goods have been passed down for many
+              generations with minimal tweaking to preserve our history. With
+              nothing but love, passion and great flavours we hope you enjoy
+              every bite.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="contact">
+        <article>
+          <div class="contact">
+            <h2>CONTACT</h2>
+            <p>
+              We are currently based in Hamburg, Germany at Neuer Jungfernstieg
+              5, 20354 Hamburg. For any inquiries please contact us at 040
+              35015375
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
     <footer>
-      <p>
-        Made with Love by <a href="https://www.codedex.io/@shani">@shani</a>
-      </p>
+      COPYRIGHT <a href="https://www.codedex.io/@shantel">@SHANTEL ARTCH</a> 2024. All rights reserved.
     </footer>
   </body>
 </html>
